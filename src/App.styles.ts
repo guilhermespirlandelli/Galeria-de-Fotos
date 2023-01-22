@@ -30,3 +30,26 @@ export const PhotoList = styled.div`
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
 `;
+
+export const UploadForm = styled.form`
+    background-color: gray;  
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+
+    input[type=submit] {
+        background-color: purple;
+        border: 0;
+        color: #fff;
+        padding: 8px 16px;
+        font-size: 15px;
+        border-radius: 10px;
+        margin: 0 20px;
+        cursor: pointer;    
+        
+        &:hover {
+            opacity: .75;            
+        }
+    }
+`;
