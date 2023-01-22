@@ -6,7 +6,7 @@ import { v4 as createId } from 'uuid';
 export const getAll = async () => {
     let list: Photo[] = [];
 
-    const imagesFolder = ref(storage, "Images");
+    const imagesFolder = ref(storage, "images");
     const photoList = await listAll(imagesFolder);
 
     for (let i in photoList.items) {
